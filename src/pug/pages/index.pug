@@ -1,0 +1,29 @@
+extends ../layout/main.pug
+block variables
+    - var title = 'Plannter';
+    - var description = 'plannter';
+    - var language = 'ru';
+    - var pageClass = 'index';
+
+block content
+    .sub-menu
+    .main
+        .main__list
+            .card
+                .card__header
+                    .card__info
+                        .card__name: p Приготовить ужин
+                        .card__date: p 10/06/2020
+                        .card__mark: p К нам приходят гости, нужно что-то сообразить
+                    .card__tags: ul
+                        li: img(src="../../img/tags/writing.png", alt="tag")
+                    .card__deadline
+                        p.card__deadday 13/06/2020
+                        .card__time-piece
+                            p.card__time-start 13:00
+                            p -
+                            p.card__time-finish 14:00
+                .card__main
+
+    .settings
+    
